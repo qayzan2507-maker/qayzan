@@ -438,7 +438,4 @@ input:focus, select:focus { border-color: var(--accent); background: var(--bg-ca
   .timer-controls { flex-wrap: wrap; justify-content: center; }
   .link-add-row   { flex-direction: column; }
   .link-add-row input { width: 100%; }
-  /* Update pertama lewat GitHub Desktop */
-  /* tes github */
-  /* tes perubahan */
 }
