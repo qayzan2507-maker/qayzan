@@ -1,2 +1,40 @@
-# Auto detect text files and perform LF normalization
+# =====================================================
+# .gitattributes — qayzan / My Start Page
+# Mengatur line endings dan diff behavior per file type
+# =====================================================
+
+# Default: auto-detect teks dan normalisasi ke LF di repo
 * text=auto
+
+# --- Web files (selalu LF) ---
+*.html    text eol=lf
+*.css     text eol=lf
+*.js      text eol=lf
+*.json    text eol=lf
+*.md      text eol=lf
+*.txt     text eol=lf
+*.xml     text eol=lf
+*.svg     text eol=lf
+
+# --- Git config files ---
+.gitattributes  text eol=lf
+.gitignore      text eol=lf
+
+# --- Binary files (jangan di-diff sebagai teks) ---
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.ico     binary
+*.webp    binary
+*.woff    binary
+*.woff2   binary
+*.ttf     binary
+*.otf     binary
+*.eot     binary
+
+# --- Diff language hints (supaya GitHub highlight syntax-nya benar) ---
+*.html    diff=html
+*.css     diff=css
+*.js      diff=javascript
+*.md      diff=markdown
